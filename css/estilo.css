@@ -1,0 +1,211 @@
+@charset "utf-8";
+/* CSS Document */
+
+*{box-sizing: border-box; margin: 0; text-decoration: none;}
+
+body, html{
+	width: 100%;
+	height: 100%;
+	font-family: Gotham, "Helvetica Neue", Helvetica, Arial, "sans-serif";
+	font-size: 16px;
+	color: #666666;
+}
+header{
+	width: 100%;
+	height: 100%;
+	background-image: url("../imagens/intro-bg.jpg");
+	background-size: cover;
+}
+.titulo{
+	color: #ffffff;
+	font-size: 42px;
+	padding-top: 8%;
+	padding-left: 2%;
+}
+.subtitulo{
+	color: #ffffff;
+	font-size: 23px;
+	padding-left: 2%;
+	font-weight: lighter;
+}
+nav{
+	width: 100%;
+	height: 60px;
+	background-color: #333333;
+	text-align: center;
+	margin-top: -60px;
+}
+nav a{
+	color: #ffffff;
+	display: inline-block;
+	padding: 20px;
+	width: 180px;
+	letter-spacing: 2px;
+	position: relative;
+	z-index: 1;
+	transition: 0.6s;
+}
+nav a:before{
+	content: "";
+	width: 100%;
+	height: 0;
+	background-color: #4ca3da;
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: -1;
+	transition: 0.5s;
+}
+nav a:hover:before{
+	height: 100%;
+}
+nav a:hover{
+	color: #333333;
+}
+.fixamenu{
+	position: fixed;
+	top: 0;
+	margin-top: 0;
+}
+section{
+	width: 100%;
+	height: 100%;
+}
+.titulogeral{
+	text-align: center;
+	padding-top: 6%;
+	width: 20%;
+	border-bottom: 2px solid #666666;
+	margin: 5% auto 2%;
+}
+.imgsobre{
+	border-radius: 50%;
+	margin: auto;
+	display: block;
+}
+.paragrafo{
+	width: 70%;
+	margin: 2% auto;
+	text-align: justify;
+	line-height: 20px;
+}
+#habilidades{
+	background-image: url("../imagens/surf3.jpg");
+	 background-size: cover;
+	color: #FFFFFF;
+    background-attachment: fixed;
+}
+#habilidades h2{
+	margin-bottom: 7%;
+}
+.textoai,.textocss,.textofront,.textohtml, .textojs, .textopsd{
+	width: 140px;
+	float: left;
+	margin-left: 10%;
+	padding: 1%;
+	text-align: right;
+	margin-bottom: 15px;
+	}
+.ai,.css,.front,.html,.js,.psd{
+	width: 0;
+	padding: 1% 0;
+	background-color: #4CA3D4;
+	margin-bottom: 15px;
+	display: flex;
+	justify-content: flex-end;
+	font-weight: bold;
+	overflow: hidden;
+	color: #333333;
+	transition: 0.5s;
+	transition-timing-function: ease-out;
+}
+.animahtml{
+	width: 35%;
+	padding: 1%;
+	transition-delay: 0.1s;
+}
+.animacss{
+    width: 33%;
+    padding: 1%;
+    transition-delay: 0.2s;
+}
+.animajs{
+    width: 36%;
+    padding: 1%;
+    transition-delay: 0.3s;
+    }
+.animafront{
+    width: 34%;
+    padding: 1%;
+    transition-delay: 0.4s;
+}
+.animapsd{
+    width: 29%;
+    padding: 1%;
+    transition-delay: 0.5s;
+}
+.animaai{
+    width: 32%;
+    padding: 1%;
+    transition-delay: 0.6s;
+}
+.galeria{
+    width: 90%;
+    margin: auto;
+    margin-top:7%;
+}
+#contato article{
+    width: 50%;
+    float: left;
+    padding: 2%;
+    height: 80%;
+}
+.campo{
+    color: #333333;
+    width: 100%;
+    background-color: #EEEEEE;
+    border: none;
+    padding: 18px;
+    margin: 2px 0;
+    resize: none;
+    font-size: 18px;
+    font-family: Gotham, "Helvetica Neue", Helvetica, Arial, "sans-serif";
+    font-weight: 300;
+}
+.botao{
+    width: 100%;
+    background-color: #333333;
+    color: #EEEEEE;
+    padding: 15px;
+    border: transparent 5px solid;
+    margin: 2px 0;
+    cursor: pointer;
+    font-size: 18px;
+}
+.botao:hover{
+    border-color: #36ADF0;
+    background-color: transparent;
+    color: #333333;
+}
+footer{
+    width: 100%;
+    background-color: #333333;
+    color: #DDDDDD;
+    padding: 1%;
+    text-align: center;
+    font-size: 12px;
+    padding-bottom: 0;
+    }
+footer a{
+    color: #999999;
+    padding: 5px;
+    font-size: 18px;
+}
+footer a:hover{
+    color: #FFFFFF;
+}
+footer p{
+    border-top: 1px solid #999999;
+    margin: 15px;
+    padding: 5px;
+}
